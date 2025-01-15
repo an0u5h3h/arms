@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>arms animation</title>
+        <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-asset> 
+                <img id="bg" src="anousheh.png">
+            </a-asset>
+            <a-entity position="0 0 4">
+                <a-camera></a-camera>
+            </a-entity>
+            <a-entity position="0 -3 4">
+                <a-entity animation="property:object3D.rotation;to:45 100 100;dur=5000;delay:100;loop:true;dir:alternate">
+                <a-sphere radius="5" color="orange" ></a-sphere>
+                <a-cylinder radius="0.075" height="9" color="green" position="0 9 3"></a-cylinder>
+                <a-entity position="0 17 3">
+                    <a-entity animation="property:rotation;to:290 90 0;dur=5000;delay:100;loop:true;dir:alternate">
+                    <a-sphere radius="3" color="orange" ></a-sphere>
+                    <a-cylinder radius="0.075" height="15" color="blue" position="0 9 3"></a-cylinder>
+                    <a-entity position="0 17 3">
+                        <a-entity animation="property:rotation;to:50 10 100;dur=5000;delay:100;loop:true;dir:alternate">
+                        <a-sphere radius="3" color="orange" ></a-sphere>
+                        <a-cylinder radius="0.075" height="15" color="purple" position="0 9 3"></a-cylinder>
+                        <a-entity position="0 17 3">
+                            <a-entity animation="property:rotation;to:20 60 300;dur=5000;delay:100;loop:true;dir:alternate">
+                            <a-sphere radius="3" color="orange" ></a-sphere>
+                            <a-cylinder radius="0.075" height="15" color="pink" position="0 9 3"></a-cylinder>
+                            <a-entity position="0 17 3">
+                                <a-entity animation="property:rotation;to:53 46 90dur=5000;delay:100;loop:true;dir:alternate">
+                                <a-sphere radius="3" color="orange" ></a-sphere>
+                                <a-cylinder radius="0.075" height="15" color="red" position="0 9 3"></a-cylinder>
+                            </a-entity>
+                        </a-entity>
+                    </a-entity>
+                </a-entity>
+            </a-entity>
+            
+
+            </a-entity>
+            <a-sky src="#bg">
+            </a-sky>
+        </a-scene>
+    </body>
+</html>
